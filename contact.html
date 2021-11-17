@@ -19,7 +19,7 @@
             referrerpolicy="no-referrer"
         />
 
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/style.css" />
 
         <title>Contact</title>
     </head>
@@ -27,14 +27,23 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">ETS PEWEB</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarID"
+                    aria-controls="navbarID"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarID">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                        <a class="nav-link" aria-current="page" href="./download-cv.html">Download CV</a>
+                        <a class="nav-link" aria-current="page" href="./download-cv.html"
+                            >Download CV</a
+                        >
                         <a class="nav-link active" aria-current="page" href="#">Contact</a>
                         <a class="nav-link" aria-current="page" href="./about-me.html">About Me</a>
                     </div>
@@ -43,19 +52,19 @@
         </nav>
 
         <div class="container-fluid content flex-grow-1 d-flex flex-column justify-content-center">
-            <header class="text-center mt-2">
-                <h1>Contact</h1>
+            <header class="text-center mt-4">
+                <h1>Contact Me</h1>
             </header>
-    
+
             <section class="mb-4">
                 <article class="row justify-content-center text-dark">
                     <div class="col-md-6 rounded">
-                        <form method="post">
+                        <form method="post" id="message">
                             <div class="d-flex justify-content-between">
                                 <h3>Kirimi Saya Pesan!</h3>
                                 <h3><i class="far fa-paper-plane"></i></h3>
                             </div>
-                            
+
                             <div class="form-group my-2">
                                 <input
                                     type="text"
@@ -115,5 +124,9 @@
             crossorigin="anonymous"
         ></script>
 
-        <link rel="stylesheet" href="./styles/style.css">
+        <script src="./scripts/main.js"></script>
+        <script>
+            document.getElementById("message").addEventListener("submit", send);
+        </script>
+    </body>
 </html>
