@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -15,4 +17,42 @@ footer {
 
 .card-footer .link-secondary:hover {
     cursor: pointer;
+}
+
+a i {
+    vertical-align: text-bottom;
+}
+
+h1 em {
+    text-decoration: underline;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+.year,
+article h2,
+.prestasi-item h4,
+.pengalaman-item h4 {
+    font-weight: bold;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+h4 i {
+    font-size: normal;
+}
+
+.card .card-img-top {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
 }
